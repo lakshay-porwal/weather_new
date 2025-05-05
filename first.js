@@ -51,13 +51,11 @@ searchBtn.addEventListener("click", () => {
 
 
 //also work when enter is pressed
-document.addEventListener("keydown", function(event) {
+searchBox.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         checkWeather(searchBox.value);
     }
-  });
-
-
+});
 
 
 

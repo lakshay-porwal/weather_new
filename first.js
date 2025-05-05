@@ -5,7 +5,8 @@ const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 
 async function checkWeather(city) {
-    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`);
+    let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=034c56a983624948b9a43729250701&q=${city}&aqi=no`);
+
 
     if (response.status == 400 || response.status == 404) {
         document.querySelector(".error").style.display = "block";
